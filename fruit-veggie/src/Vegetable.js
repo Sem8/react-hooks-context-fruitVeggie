@@ -4,7 +4,10 @@ import { VegetableContext } from './Store';
 const Vegetable = () => {
     const [vegetable, setVegetable] = useContext(VegetableContext);
     return (
+        <>
         <div>{vegetable}</div>
+        <button onClick={() => setVegetable('Brocolli')}>Set Vege to Broc</button>
+        </>
     )
 };
 
